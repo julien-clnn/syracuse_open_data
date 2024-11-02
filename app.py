@@ -184,6 +184,7 @@ def main(dataset_with_score):
         - **Crime Weighting:** To increase precision, we add a weight to crime occurrences. More severe crimes, such as homicide, are given a higher weight compared to less severe crimes, like fraud.
 
         - ⁠**Street Segment Analysis with OSMnx:** Initially, our plan was to analyze quality of life metrics on a street segment level using the OSMnx library. However, due to high computation time and limited resources, we decided to focus on neighborhoods instead.
+        ![POC](https://raw.githubusercontent.com/julien-clnn/syracuse_open_data/main/streetsegment_example.png "Proof of concept using 2 Datasets and buffers").
 
         - ⁠**Weighted Averages for Attributes:** For the weighted average, we thought of three options:
             - *Normal Average*: A simple average of all attribute scores.
@@ -211,6 +212,7 @@ def main(dataset_with_score):
         - ⁠Healthcare:
           [Osmnx Points of Interest](https://stackoverflow.com/questions/61639039/using-osmnx-to-retrieve-nearby-points-of-interest)
         """)
+
     else:
         # "More details" button displayed above the map
         if st.button("More details"):
